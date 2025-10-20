@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Generate a <span class="highlight">random password</span></h1>
+        <div class="flex">
+            <button id="password_btn">Generate Passwords</button>
+            <button id="special_characters">Special Characters</button>
+            <button id="reset_btn">Reset</button>
+        </div>
+        <div class="flex">
+            <button id="btn_one">1</button>
+            <button id="btn_two">2</button>
+            <button id="btn_three">3</button>
+            <button id="btn_four">4</button>
+        </div>
+        <div class="flex">
+            <div class="p">            
+                <p class="password" onclick="copyPwd()" id="password_1"></p>
+                <p class="password" onclick="copyPwd()" id="password_3"></p>
+            </div>
+            <div class="p">           
+                <p class="password" onclick="copyPwd()" id="password_2"></p>
+                <p class="password" onclick="copyPwd()" id="password_4"></p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

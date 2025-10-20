@@ -1,0 +1,102 @@
+body {
+    color: #D3C6AA;
+    margin: 0;
+    background-color: #2D353B;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    border: 3px solid #A7C080;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 20px;
+    color: #D3C6AA;
+    padding: 10px;
+}
+
+#reset_btn:hover {
+    border-color: #F85552;
+    background-color: #F85552;
+    color: #1E2326;
+}
+
+#btn_one {
+    border-color: #E67E80;
+}
+
+#btn_one:hover {
+    background-color: #E67E80;
+    color: #1E2326;
+}
+
+#btn_two {
+    border-color: #DBBC7F;
+}
+
+#btn_two:hover {
+    background-color: #DBBC7F;
+    color: #1E2326;
+}
+
+#btn_three {
+    border-color: #7FBBB3;
+}
+
+#btn_three:hover {
+    background-color: #7FBBB3;
+    color: #1E2326;
+}
+
+#btn_four {
+    border-color: #83C092;
+}
+
+#btn_four:hover {
+    background-color: #83C092;
+    color: #1E2326;
+}
+
+#special_characters {
+    background-color: #A7C080;
+    color: #1E2326;
+}
+
+#password_btn {
+    background-color: #A7C080;
+    color: #2D353B;
+}
+
+#password_btn:hover {
+    background-color: #83C092;
+    border-color: #83C092;
+    color: #2D353B;
+}
+
+.highlight {
+    color: #A7C080
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 40px
+}
+
+.password {
+    text-align: center;
+    font-size: 25px;
+    background-color: #232A2E;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: auto;
+    border-radius: 10px
+}
+
+.slider {
+    height: 30px;
+}
