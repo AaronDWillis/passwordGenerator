@@ -14,8 +14,7 @@ function getCharacters (includeSpecialChar) {
 let specialChar = true
 
 //This function adds a functional toggle between special characters and not
-document.getElementById("special_characters").addEventListener("click", toggleChar)
-function toggleChar () {
+document.getElementById("special_characters").addEventListener("click", function toggleChar () {
     if (specialChar === false) {
         specialChar = true
         document.getElementById("special_characters").style.backgroundColor = "#A7C080";  
@@ -26,48 +25,48 @@ function toggleChar () {
         document.getElementById("special_characters").style.color = "#D3C6AA";  
     }
     return specialChar
-}
+})
 
 document.getElementById("special")
 
 //these blocks of code reset the passwords when their button is clicked 
 let show = 4
-document.getElementById("btn_one").addEventListener("click", btnOne)
-function btnOne () {
+document.getElementById("btn_one").addEventListener("click", function btnOne () {
     show = 1
     updateVisibility()
     pwdOne.textContent = ""
     pwdTwo.textContent = ""
     pwdThree.textContent = ""
     pwdFour.textContent = ""
-}
-document.getElementById("btn_two").addEventListener("click", btnTwo)
-function btnTwo () {
+})
+
+document.getElementById("btn_two").addEventListener("click", function btnTwo () {
     show = 2
     updateVisibility()
     pwdOne.textContent = ""
     pwdTwo.textContent = ""
     pwdThree.textContent = ""
     pwdFour.textContent = ""
-}
-document.getElementById("btn_three").addEventListener("click", btnThree)
-function btnThree () {
+})
+
+document.getElementById("btn_three").addEventListener("click", function btnThree () {
     show = 3
     updateVisibility()
     pwdOne.textContent = ""
     pwdTwo.textContent = ""
     pwdThree.textContent = ""
     pwdFour.textContent = ""
-}
-document.getElementById("btn_four").addEventListener("click", btnFour)
-function btnFour () {
+})
+
+document.getElementById("btn_four").addEventListener("click", function btnFour () {
     show = 4
     updateVisibility()
     pwdOne.textContent = ""
     pwdTwo.textContent = ""
     pwdThree.textContent = ""
     pwdFour.textContent = ""
-}
+})
+
 
 //This function allows for the passwords to be cleared
 function updateVisibility () {
@@ -113,13 +112,12 @@ function updatePwds () {
 
 document.getElementById("password_btn").addEventListener("click", updatePwds)
 
-document.getElementById("reset_btn").addEventListener("click", reset)
-function reset () {
+document.getElementById("reset_btn").addEventListener("click", function reset () {
     pwdOne.textContent = ""
     pwdTwo.textContent = ""
     pwdThree.textContent = ""
     pwdFour.textContent = ""
-}
+})
 
 function copyPwd () {
     document.execCommand("copy");
